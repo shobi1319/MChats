@@ -1,5 +1,5 @@
 {
-  "name": "chatapp",
+  "name": "genensys",
   "displayName": "MChats",
   "plugins": [
     "expo-font"

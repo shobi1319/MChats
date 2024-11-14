@@ -1,5 +1,5 @@
 {
-  "name": "mnotes",
+  "name": "chatapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,10 +18,11 @@
     "@react-native-community/slider": "^4.5.5",
     "@react-native-firebase/app": "^21.4.0",
     "@react-native-firebase/ml": "^21.4.0",
-    "@react-native-picker/picker": "^2.8.0",
+    "@react-native-picker/picker": "^2.9.0",
     "@react-navigation/bottom-tabs": "^6.6.1",
     "@react-navigation/native": "^6.1.12",
     "@react-navigation/stack": "^6.3.23",
+    "axios": "^1.7.7",
     "d3-shape": "^3.2.0",
     "expo-asset": "^9.0.2",
     "expo-font": "~11.10.3",
@@ -47,7 +48,8 @@
     "react-native-svg": "^15.3.0",
     "react-native-tab-view": "^3.5.2",
     "react-native-track-player": "^4.1.1",
-    "react-native-vector-icons": "^10.0.3"
+    "react-native-vector-icons": "^10.0.3",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

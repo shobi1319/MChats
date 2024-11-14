@@ -1,14 +1,21 @@
-// App.tsx
 import React from 'react';
-import { StatusBar, SafeAreaView } from 'react-native';
-import GameScreen from './GameScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import LoginScreen from './LoginScreen';
+import SignUpScreen from './SignUpScreen';
+import MessageScreen from './MessageScreen';
 
-const App: React.FC = () => {
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content" />
-      <GameScreen />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="Message" component={MessageScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
