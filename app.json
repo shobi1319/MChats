@@ -1,0 +1,7 @@
+{
+  "name": "chatapp",
+  "displayName": "MChats",
+  "plugins": [
+    "expo-font"
+  ]
+}
